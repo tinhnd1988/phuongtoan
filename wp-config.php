@@ -20,18 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('FS_METHOD','direct');
-
-define('DB_NAME', 'phuongtoan');
+define('DB_NAME', 'newtestbankers');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'newtestbankers');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'toor');
+define('DB_PASSWORD', 'Pa55w@rd');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'newtestbankers.db.10935584.hostedresource.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -97,3 +95,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+define('FS_METHOD','direct');
