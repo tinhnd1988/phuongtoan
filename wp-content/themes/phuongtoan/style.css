@@ -2720,7 +2720,7 @@ p > video {
 }
 
 /*START Top Menu*/
-#navbar .menu-item a:hover{
+#navbar .menu-item a:hover, #navbar .nav-menu .current-menu-item a, #navbar .nav-menu .current_page_item a{
 	font-weight: bold;
 	color: #FFF !important;
 }
