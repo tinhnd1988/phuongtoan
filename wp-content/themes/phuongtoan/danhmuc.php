@@ -9,10 +9,25 @@ get_header();
 
 <h1>Danh Mục Sản Phẩm</h1>
 <?php
-	$category_ids = get_all_category_ids();
-	foreach($category_ids as $cat_id) {
-		$cat_name = get_cat_name($cat_id);
-		echo $cat_name.'<br>';
+$args = array(
+	'type'                     => 'post',
+	'child_of'                 => 0,
+	'parent'                   => '',
+	'orderby'                  => 'name',
+	'order'                    => 'ASC',
+	'hide_empty'               => 1,
+	'hierarchical'             => 1,
+	'exclude'                  => '',
+	'include'                  => '',
+	'number'                   => '',
+	'taxonomy'                 => 'danh-muc',
+	'pad_counts'               => false 
+
+); 
+	$categories = get_categories($args);
+	foreach($categories as $category) {
+		
+		echo $category->name.'<br>';
 	}
 ?>
 
