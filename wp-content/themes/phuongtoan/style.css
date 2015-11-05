@@ -2666,8 +2666,8 @@ p > video {
 .search_home .bg_top, #Footer .footer_bottom .bg_top {
 	padding: 5px; 
 	background-color: #000; 
-	opacity: 0.2; display: 
-	inline-block; 
+	opacity: 0.1; 
+	display: inline-block; 
 	width: 100%; 
 	height: 70px;
 }
@@ -2696,7 +2696,7 @@ p > video {
 }
 .search_home form input.search-field{
 	border-radius: 30px;
-	background-color: #1A75B6;
+	background-color: #1762A6;
 	background-repeat:no-repeat;
 	color: #8ab0d4;
 	border: 1px #8ab0d4 solid;
@@ -2718,6 +2718,13 @@ p > video {
 .search_home form input.search-field:-ms-input-placeholder {  
 	color: #8ab0d4 !important;
 }
+
+/*START Top Menu*/
+#navbar .menu-item a:hover{
+	font-weight: bold;
+	color: #FFF !important;
+}
+/*END Top Menu*/
 
 #Header_Bg {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
 
