@@ -44,8 +44,14 @@
 			<div class="menu">
 				
 				<marquee> <span class="text_animation">sự hài lòng của quý khách là niềm vinh hạnh cho công ty chúng tôi. </span></marquee>
+
 				<div id="navbar" class="navbar">					
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>					
+						<?php 
+							wp_nav_menu( array( 
+								'theme_location' => 'primary', 
+								'menu_class' => 'nav-menu', 
+							) ); 
+						?>					
 				</div><!-- #navbar -->
 			</div>
 		</div>
