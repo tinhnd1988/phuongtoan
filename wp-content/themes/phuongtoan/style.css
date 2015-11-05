@@ -2748,7 +2748,17 @@ p > video {
 
 #Footer {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
 #Footer .content_f {max-width: 980px; margin: 0 auto;}
-#Footer .content_f .icon {background: url(images/sprite.png) no-repeat; display: inline-block; width: 25px; height: 25px;}
+#Footer .content_f .icon {background: url(images/sprite.png) no-repeat; display: inline-block; width: 20px; height: 20px;}
+#Footer .content_f .hom {background-position: -42px 0;}
+#Footer .content_f .call {background-position: -62px 0;}
+#Footer .content_f .fax {background-position: -84px 0;}
+#Footer .content_f .email {background-position: -106px 0;}
+#Footer .content_f .face {background-position: 0 -110px; width: 33px; height: 33px; }
+#Footer .content_f .twitter {background-position: -33px -110px; width: 33px; height: 33px;}
+#Footer .content_f .google {background-position: -67px -110px; width: 33px; height: 33px;}
+#Footer .content_f .youtube {background-position: -101px -110px; width: 33px; height: 33px;}
+#Footer .content_f .printer {background-position: -135px -110px; width: 33px; height: 33px;}
+    
 
 #Footer .footer_bottom {position: relative;}
 #Footer .footer_bottom p {position: absolute; bottom: 25px; left: 14%; margin: 0; }
