@@ -2756,10 +2756,20 @@ p > video {
 	font-size: 36px;
 	font-weight: normal;
 }
+.home #home-page-content ul{
+	text-align: center !important;
+}
 .home #home-page-content ul li{
 	font-size: 18px;
 	font-weight: normal;
-    text-align: center !important;
+}
+.home #home-page-content ul li:before{
+    background: url('images/sprite.png') no-repeat 0px 0px;
+    width:20px;
+    height:20px;
+    display:block;
+    position:absolute;
+    content: " ";
 }
 /*HOME PAGE*/
 
