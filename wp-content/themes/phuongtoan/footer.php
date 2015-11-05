@@ -20,7 +20,7 @@
 					<li> <a href="/">Công trình tiêu biểu</a> </li>
 					<li> <a href="/">Liên hệ</a> </li>
 				</ul>
-				<div><span class"icon hom"></span> Công ty tnhh sản xuất thương mại quảng cáo phương toàn
+				<div><span class="icon hom"></span> Công ty tnhh sản xuất thương mại quảng cáo phương toàn
 				Đc: 110A Lê Niệm, P. Phú Thạnh , Q. Tân Phú </div>
 				<div> 
 					<div><span class="icon call"></span> ĐT: 08 3606 2577 / 0905 333 188</div>
