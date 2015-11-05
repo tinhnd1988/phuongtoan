@@ -2748,6 +2748,8 @@ p > video {
 
 #Footer {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
 #Footer .content_f {max-width: 980px; margin: 0 auto;}
+#Footer .content_f .icon {background: url(images/sprite.png) no-repeat; display: inline-block; width: 25px; height: 25px;}
+
 #Footer .footer_bottom {position: relative;}
 #Footer .footer_bottom p {position: absolute; bottom: 25px; left: 14%; margin: 0; }
 
