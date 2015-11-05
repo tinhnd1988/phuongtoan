@@ -2774,7 +2774,7 @@ p > video {
 }
 /*HOME PAGE*/
 
-#Footer {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
+#Footer {background: url(images/bgTop-Footer.jpg) repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
 #Footer .content_f {max-width: 980px; margin: 0 auto; padding-top: 40px;}
 #Footer .content_f .line_f {border: 1px solid #2675B9; margin-bottom: 15px;}
 #Footer .content_f .footer_left {float: left;display: inline-block;width: 650px; color: #8ab0d4; font-size: 13px;padding-bottom: 15px;}

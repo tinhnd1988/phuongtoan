@@ -27,7 +27,7 @@
 					<div class="Fl_left"><span class="icon call"></span> ĐT: 08 3606 2577 / 0905 333 188</div>
 					<div><span class="icon fax"></span> Fax: 08 3978 3442 </div>
 				</div>
-				<div><span class="icon email"></span>Email: phuongtoan.vn@gmail.com </div>
+				<div><span class="icon email"></span> Email: phuongtoan.vn@gmail.com </div>
 			</div>
 			<div class="footer_right">
 				<h3 class="title">STAY CONNECTED</h3>
