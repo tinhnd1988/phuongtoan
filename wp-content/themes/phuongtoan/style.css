@@ -2746,6 +2746,23 @@ p > video {
 #Header .menu .nav-menu li {list-style: none; float: left; padding: 10px;}
 #Header .menu .nav-menu li a {font-size: 18px; text-transform: uppercase; color: #8ab0d4;}
 
+/*HOME PAGE*/
+.home #home-page-content {
+	margin: 30px auto;
+	width: 980px;
+	color: #555555;
+}
+.home #home-page-content h2{
+	font-size: 36px;
+	font-weight: normal;
+}
+.home #home-page-content ul li{
+	font-size: 18px;
+	font-weight: normal;
+    text-align: center !important;
+}
+/*HOME PAGE*/
+
 #Footer {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
 #Footer .content_f {max-width: 980px; margin: 0 auto; padding-top: 40px;}
 #Footer .content_f .line_f {border: 1px solid #ccc; margin-bottom: 15px;}
