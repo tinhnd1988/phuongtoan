@@ -2674,7 +2674,17 @@ p > video {
 .search_home .search-box {
     background: #fff none repeat scroll 0 0;    
     margin: 8px auto auto;
-    text-align: left;
+    text-align: left;  
+}
+.search_home .search-box .magnify{
+	height: 25px;
+	width: 20px;
+	background-image: url('images/sprite.png');
+	background-position: -20px 0px;
+	position: absolute; 
+	top: 23px; 
+	right: 370px;
+	z-index: 10;  	
 }
 .search_home form {
 	display: inline-block;
@@ -2687,9 +2697,11 @@ p > video {
 .search_home form input.search-field{
 	border-radius: 30px;
 	background-color: #1A75B6;
+	background-repeat:no-repeat;
 	color: #8ab0d4;
 	border: 2px #8ab0d4 solid;
 	height: 40px;
+	padding-left: 50px;
 }
 #Header_Bg {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
 

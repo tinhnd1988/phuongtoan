@@ -34,7 +34,10 @@
 	<div id="Header_Bg">
 		<div class="search_home">
 			<div class="bg_top"></div>
-			<div class="search-box"><?php get_search_form(); ?></div>
+			<div class="search-box">
+				<span class="magnify"></span>
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 		<div id="Header">
 			<a href="/" class="logo"></a>
