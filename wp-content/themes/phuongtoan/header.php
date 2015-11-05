@@ -31,7 +31,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<div id="container">
+	<div id="Header_Bg">
 		<div class="search_home">
 			<div class="bg_top"></div>
 			<div class="search-box"><?php get_search_form(); ?></div>

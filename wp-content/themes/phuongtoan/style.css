@@ -2671,7 +2671,7 @@ p > video {
     text-align: left;
 }
 .search_home form {display: inline-block;float: right; width: 250px; position: absolute; top: 5px; right: 0}
-#container {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
+#Header_Bg {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
 
 #Header {max-width: 980px; margin: 0 auto;}
 #Header .logo {background: url(images/logo.png) no-repeat; width: 156px; height: 93px; display: inline-block; float: left;}
