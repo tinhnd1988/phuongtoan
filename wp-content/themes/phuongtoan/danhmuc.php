@@ -12,7 +12,7 @@ get_header();
 $args = array(
 	'type'                     => 'post',
 	'child_of'                 => 0,
-	'parent'                   => '',
+	'parent'                   => 0,
 	'orderby'                  => 'name',
 	'order'                    => 'ASC',
 	'hide_empty'               => 1,
@@ -26,7 +26,7 @@ $args = array(
 ); 
 	$categories = get_categories($args);
 	foreach($categories as $category) {
-		
+		print_r($category);
 		echo $category->name.'<br>';
 	}
 ?>
