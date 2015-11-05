@@ -2755,21 +2755,22 @@ p > video {
 .home #home-page-content h2{
 	font-size: 36px;
 	font-weight: normal;
+	text-align: center;
 }
 .home #home-page-content ul{
 	text-align: center !important;
+	list-style: none;
 }
 .home #home-page-content ul li{
 	font-size: 18px;
 	font-weight: normal;
 }
-.home #home-page-content ul li:before{
+.home #home-page-content ul li span{
     background: url('images/sprite.png') no-repeat 0px 0px;
-    width:20px;
-    height:20px;
-    display:block;
-    position:absolute;
-    content: " ";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 4px -30px;
 }
 /*HOME PAGE*/
 
