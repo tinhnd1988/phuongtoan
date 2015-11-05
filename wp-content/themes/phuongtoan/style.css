@@ -2726,7 +2726,14 @@ p > video {
 }
 /*END Top Menu*/
 
-#Header_Bg {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
+#Header_Bg {
+	background: url(images/bgTop-Footer.jpg) no-repeat; 
+	background-size: 100%;
+	display: inline-block; 
+	height: auto; 
+	width: 100%; 
+	border-bottom: 5px solid #FFB600;
+}
 
 #Header {max-width: 980px; margin: 0 auto;}
 #Header .logo {background: url(images/logo.png) no-repeat; width: 156px; height: 93px; display: inline-block; float: left;}
@@ -4150,7 +4157,7 @@ p > video {
 
 	.site {
 		margin: 0 auto;
-		max-width: 1349px;
+		/*max-width: 1349px;*/
 	}
 
 	.sidebar {
