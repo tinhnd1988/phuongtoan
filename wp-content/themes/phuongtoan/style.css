@@ -4075,7 +4075,7 @@ p > video {
  */
 
 @media screen and (min-width: 59.6875em) {
-	body:before {
+	/*body:before {
 		background-color: #fff;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		content: "";
@@ -4086,8 +4086,8 @@ p > video {
 		top: 0;
 		left: 0;
 		
-		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
-	}
+		z-index: 0; 
+	}*/
 
 	.site {
 		margin: 0 auto;
