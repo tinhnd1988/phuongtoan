@@ -20,6 +20,7 @@
 					<li> <a href="/">Công trình tiêu biểu</a> </li>
 					<li> <a href="/">Liên hệ</a> </li>
 				</ul>
+				<div class="line_f"></div>
 				<div><span class="icon hom"></span> <span class="name_cty">Công ty tnhh sản xuất thương mại quảng cáo phương toàn</span>
 				<br><span class="diachi">Đc: 110A Lê Niệm, P. Phú Thạnh , Q. Tân Phú </span></div>
 				<div> 
@@ -30,6 +31,7 @@
 			</div>
 			<div class="footer_right">
 				<h3 class="title">STAY CONNECTED</h3>
+				<div class="line_f"></div>
 				<ul>
 					<li><a href="#" class="icon face"></a> </li>
 					<li><a href="#" class="icon twitter"></a> </li>

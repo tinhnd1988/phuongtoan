@@ -2747,15 +2747,16 @@ p > video {
 #Header .menu .nav-menu li a {font-size: 18px; text-transform: uppercase; color: #8ab0d4;}
 
 #Footer {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
-#Footer .content_f {max-width: 980px; margin: 0 auto;}
-#Footer .content_f .footer_left {float: left;display: inline-block;width: 650px; color: #fff; font-size: 13px;}
+#Footer .content_f {max-width: 980px; margin: 0 auto; padding-top: 40px;}
+#Footer .content_f .line_f {border: 1px solid #ccc; margin-bottom: 15px;}
+#Footer .content_f .footer_left {float: left;display: inline-block;width: 650px; color: #8ab0d4; font-size: 13px;}
 #Footer .content_f .footer_left .menu_footer { display: inline-block;}
 #Footer .content_f .footer_left .menu_footer li {float: left; list-style: none; padding: 10px;}
-#Footer .content_f .footer_left .menu_footer li a {text-transform: uppercase; font-size: 12px; color: #fff;}
-#Footer .content_f .footer_left .name_cty {text-transform: uppercase; font-size: 13px; color: #fff;}
+#Footer .content_f .footer_left .menu_footer li a {text-transform: uppercase; font-size: 12px; color: #8ab0d4;}
+#Footer .content_f .footer_left .name_cty {text-transform: uppercase; font-size: 13px; color: #8ab0d4;}
 #Footer .content_f .footer_left .diachi {padding-left: 25px;}
 #Footer .content_f .footer_left .Fl_left {float: left; padding-right: 30px;}
-#Footer .content_f .footer_right {float: right; color: #fff;}
+#Footer .content_f .footer_right {float: right; color: #8ab0d4;}
 #Footer .content_f .footer_right ul li {float: left; padding: 0 5px; list-style: none;}
 #Footer .content_f .icon {background: url(images/sprite.png) no-repeat; display: inline-block; width: 20px; height: 20px;}
 #Footer .content_f .hom {background-position: -42px 0;}
