@@ -2699,10 +2699,26 @@ p > video {
 	background-color: #1A75B6;
 	background-repeat:no-repeat;
 	color: #8ab0d4;
-	border: 2px #8ab0d4 solid;
+	border: 1px #8ab0d4 solid;
 	height: 40px;
 	padding-left: 50px;
 }
+.search_home form input.search-field::-webkit-input-placeholder {
+	color: #8ab0d4 !important;
+}
+ 
+.search_home form input.search-field:-moz-placeholder { /* Firefox 18- */
+	color: #8ab0d4 !important;
+}
+ 
+.search_home form input.search-field::-moz-placeholder {  /* Firefox 19+ */
+	color: #8ab0d4 !important;
+}
+ 
+.search_home form input.search-field:-ms-input-placeholder {  
+	color: #8ab0d4 !important;
+}
+
 #Header_Bg {background: url(images/bgTop-Footer.jpg) no-repeat; display: inline-block; height: auto; width: 100%; border-bottom: 5px solid #FFB600;}
 
 #Header {max-width: 980px; margin: 0 auto;}
