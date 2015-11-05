@@ -40,7 +40,7 @@
 			<a href="/" class="logo"></a>
 			<div class="menu">
 				
-				<marquee behavior="alternate"> <span class="text_animation">sự hài lòng của qúy khách là niềm vinh hạnh cho công ty chúng tôi. </span></marquee>
+				<marquee> <span class="text_animation">sự hài lòng của quý khách là niềm vinh hạnh cho công ty chúng tôi. </span></marquee>
 				<div id="navbar" class="navbar">					
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>					
 				</div><!-- #navbar -->
