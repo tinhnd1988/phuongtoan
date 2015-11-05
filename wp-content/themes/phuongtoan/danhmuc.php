@@ -19,7 +19,7 @@ $args = array(
 	'hierarchical'             => 1,
 	'exclude'                  => '',
 	'include'                  => '',
-	'number'                   => '',
+	'number'                   => 0,
 	'taxonomy'                 => 'danh-muc',
 	'pad_counts'               => false 
 
