@@ -8,6 +8,7 @@ get_header();
 ?>
 
 <h1>Danh Mục Sản Phẩm</h1>
+<ul>
 <?php
 $args = array(
 	'type'                     => 'post',
@@ -26,10 +27,9 @@ $args = array(
 
 ); 
 	$categories = get_categories($args);
-	foreach($categories as $category) {
-		print_r($category);
-		echo $category->name.'<br>';
-	}
-?>
+	foreach($categories as $category) : ?>
+		<li><a href="<?php echo get_category_link( $category->term_id ); ?>"> <?php echo $category->name; ?></a>  </li>		
+	<?php endforeach; ?>
+</ul>
 
 <?php get_footer(); ?>
