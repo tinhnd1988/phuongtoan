@@ -2773,7 +2773,12 @@ p > video {
     margin: 4px -30px;
 }
 /*HOME PAGE*/
-
+/* DANH MUC Begin */
+.DanhMuc {max-width: 980px; margin: 0 auto;}
+.DanhMuc .list_category li {list-style: none; float: left; margin-right: 10px; background-color: #A6C4DF;}
+.DanhMuc .list_category li:hover {background-color: #0A67B7 }
+.DanhMuc .list_category li a {padding: 10px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;}
+/* DANH MUC end */
 #Footer {background: url(images/bgTop-Footer.jpg) repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
 #Footer .content_f {max-width: 980px; margin: 0 auto; padding-top: 40px;}
 #Footer .content_f .line_f {border: 1px solid #2675B9; margin-bottom: 15px;}
