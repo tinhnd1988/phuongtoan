@@ -39,7 +39,7 @@ get_header();
 
 		foreach ($ca_tabs as $value) {			
 			$leaderships = new WP_Query(array( 
-    'post_type' => 'post',
+    'post_type' => 'san-pham',
     'showposts' => -1,
     'tax_query' => array(
         'taxonomy' => 'danh-muc',
