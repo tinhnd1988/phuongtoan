@@ -2731,7 +2731,6 @@ p > video {
 #Header_Bg {
 	background: url(images/bgTop-Footer.jpg); 
 	background-position: 0 0;
-	display: inline-block; 
 	height: auto; 
 	width: 100%; 
 	border-bottom: 5px solid #FFB600;

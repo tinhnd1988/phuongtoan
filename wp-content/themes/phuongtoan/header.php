@@ -21,6 +21,7 @@
 	<![endif]-->
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/jquery.fancybox.css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="<?php bloginfo('template_url');?>/js/jquery.min.js"></script>
     <script src="<?php bloginfo('template_url');?>/js/jquery.flexslider.js" defer=""></script>
 	<!-- Add fancyBox main JS and CSS files -->
@@ -52,7 +53,9 @@
 								'menu_class' => 'nav-menu', 
 							) ); 
 						?>					
-				</div><!-- #navbar -->
+				</div>
+				<!-- #navbar -->
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
