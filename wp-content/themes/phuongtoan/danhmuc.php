@@ -29,7 +29,7 @@ get_header();
 			$categories = get_categories($args);
 			$i=1;
 			$ca_tabs = array();
-			foreach($categories as $category) : $ca_tabs['category_id'] = $category->term_id; ?>
+			foreach($categories as $category) : $ca_tabs[$i]['category_id'] = $category->term_id; ?>
 				<?php /*<li><a href="<?php echo get_term_link( $category->slug, 'danh-muc' );?>"> <?php echo $category->name; ?></a></li>*/?>
 				<li><a href="#tabs-<?php echo $i; ?>"><?php echo $category->name; ?></a></li>    
 			<?php $i++; endforeach; ?>
