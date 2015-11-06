@@ -27,8 +27,8 @@ $args = array(
 
 ); 
 	$categories = get_categories($args);
-	foreach($categories as $category) : print_r($category); ?>
-		<li><a href="<?php echo get_category_link( $category->term_id ); ?>"> <?php echo $category->name; ?></a>  </li>		
+	foreach($categories as $category) : ?>
+		<li><a href="<?php echo get_term_link( $category->slug, 'danh_muc' );?>"> <?php echo $category->name; ?></a>  </li>		
 	<?php endforeach; ?>
 </ul>
 
