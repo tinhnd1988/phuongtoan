@@ -8,7 +8,7 @@ get_header();
 ?>
 <div class="DanhMuc">
 	<h1>Danh Mục Sản Phẩm</h1>
-	<ul class"list_category">
+	<ul class="list_category">
 	<?php
 	$args = array(
 		'type'                     => 'post',
