@@ -36,6 +36,7 @@ get_header();
 		</ul>
 		<?php 		
 		$j=1;
+		print_r($ca_tabs);
 		foreach ($ca_tabs as $value) {
 			$args_post = array('post_type' => 'post','category' => $value, 'order' => 'ASC', 'numberposts' => -1 );
 	    	$datacates = get_posts($args_post);
