@@ -2774,7 +2774,8 @@ p > video {
 }
 /*HOME PAGE*/
 /* DANH MUC Begin */
-.DanhMuc {max-width: 980px; margin: 0 auto;}
+.DanhMuc {max-width: 980px; margin: 0 auto; text-align: center;}
+.DanhMuc h1 {text-transform: uppercase; font-size: 14px; font-weight: bold;}
 .DanhMuc .list_category li {list-style: none; float: left; margin-right: 10px; background-color: #A6C4DF;}
 .DanhMuc .list_category li:hover {background-color: #0A67B7 }
 .DanhMuc .list_category li a {padding: 10px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;}
