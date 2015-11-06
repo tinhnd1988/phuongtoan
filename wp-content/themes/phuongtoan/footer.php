@@ -28,6 +28,7 @@
 					<div><span class="icon fax"></span> Fax: 08 3978 3442 </div>
 				</div>
 				<div><span class="icon email"></span> Email: phuongtoan.vn@gmail.com </div>
+				<p class="copyright">&copy; Bản quyền thuộc về công ty TNHH sản xuất - thương mại - quảng cáo PHƯƠNG TOÀN </p>
 			</div>
 			<div class="footer_right">
 				<h3 class="title">STAY CONNECTED</h3>
@@ -41,11 +42,9 @@
 				</ul>
 				<span>LIKE US on FACEBOOK</span>
 			</div>
-	</div>
-<div class="footer_bottom"> 
-<div class="bg_top"></div>
-<p>&copy; Bản quyền thuộc về công ty TNHH sản xuất - thương mại - quảng cáo PHƯƠNG TOÀN </p>
-</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_bottom"></div>
  
 	</div>
 

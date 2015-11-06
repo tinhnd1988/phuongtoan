@@ -2667,7 +2667,6 @@ p > video {
 	padding: 5px; 
 	background-color: #000; 
 	opacity: 0.1; 
-	display: inline-block; 
 	width: 100%; 
 	height: 70px;
 }
@@ -2784,10 +2783,25 @@ p > video {
 .DanhMuc .list_category li:hover {background-color: #0A67B7 }
 .DanhMuc .list_category li a {padding: 10px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;}
 /* DANH MUC end */
-#Footer {background: url(images/bgTop-Footer.jpg) repeat; display: inline-block; height: auto; width: 100%; border-top: 5px solid #FFB600;}
-#Footer .content_f {max-width: 980px; margin: 0 auto; padding-top: 40px;}
+#Footer {
+	background: url(images/bgTop-Footer.jpg) repeat; 
+	height: auto; 
+	width: 100%; 
+	border-top: 5px solid #FFB600;
+	position: relative;
+}
+#Footer .content_f {
+	max-width: 980px; 
+	margin: 0 auto; 
+	padding-top: 40px;
+}
 #Footer .content_f .line_f {border: 1px solid #2675B9; margin-bottom: 15px;}
-#Footer .content_f .footer_left {float: left;display: inline-block;width: 650px; color: #8ab0d4; font-size: 13px;padding-bottom: 15px;}
+#Footer .content_f .footer_left {
+	float: left;
+	width: 740px; 
+	color: #8ab0d4; 
+	font-size: 13px;
+}
 #Footer .content_f .footer_left .menu_footer { display: inline-block; margin-bottom: 0}
 #Footer .content_f .footer_left .menu_footer li {float: left; list-style: none; padding: 10px;}
 #Footer .content_f .footer_left .menu_footer li:first-child {padding-left: 0}
@@ -2795,7 +2809,11 @@ p > video {
 #Footer .content_f .footer_left .name_cty {text-transform: uppercase; font-size: 13px; color: #8ab0d4;}
 #Footer .content_f .footer_left .diachi {padding-left: 25px;}
 #Footer .content_f .footer_left .Fl_left {float: left; padding-right: 30px;}
-#Footer .content_f .footer_right {float: right; color: #8ab0d4;}
+#Footer .content_f .footer_right {
+	float: right; 
+	color: #8ab0d4;
+	width: 220px;
+}
 #Footer .content_f .footer_right h3 {font-size: 13px; padding-top: 10px; padding-bottom: 16px;}
 #Footer .content_f .footer_right span {font-size: 13px;}
 #Footer .content_f .footer_right ul li {float: left; padding: 0 5px; list-style: none;}
@@ -2816,8 +2834,19 @@ p > video {
 #Footer .content_f .printer:hover {background-position: -135px -144px}
     
 
-#Footer .footer_bottom {position: relative;}
-#Footer .footer_bottom p {position: absolute; bottom: 25px; left: 14%; margin: 0; color: #8ab0d4; font-size: 13px; }
+#Footer .footer_bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #000;
+    opacity: 0.1;
+}
+#Footer .footer_left p.copyright {
+	padding-top: 40px;
+	position: relative;
+	z-index: 10;
+}
 
 /**
  * 16.0 Media Queries
