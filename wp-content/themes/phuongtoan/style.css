@@ -2718,15 +2718,15 @@ p > video {
 	color: #8ab0d4 !important;
 }
 
-/*START Top Menu*/
-#navbar .nav-menu .current-menu-item a, #navbar .nav-menu .current_page_item a{
+/*START Primary Menu*/
+#navbar .nav-menu .current-menu-item a, #navbar .nav-menu .current_page_item a, #Footer .menu_footer .current-menu-item a, #Footer .menu_footer .current_page_item a{
 	font-weight: bold;
 	color: #FFF !important;
 }
-#navbar .menu-item a:hover{
+#navbar .menu-item a:hover, #Footer .menu-item a:hover{
 	color: #FFF !important;	
 }
-/*END Top Menu*/
+/*END Primary Menu*/
 
 #Header_Bg {
 	background: url(images/bgTop-Footer.jpg); 

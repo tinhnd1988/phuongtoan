@@ -13,13 +13,14 @@
 	<div id="Footer"> 
 		<div class="content_f"> 
 			<div class="footer_left">
-				<ul class="menu_footer">
-					<li> <a href="/">Trang chủ</a> </li>
-					<li> <a href="/">Giới thiệu</a> </li>
-					<li> <a href="/">Danh mục sản phẩm</a> </li>
-					<li> <a href="/">Công trình tiêu biểu</a> </li>
-					<li> <a href="/">Liên hệ</a> </li>
-				</ul>
+				
+				<?php 
+					wp_nav_menu( array( 
+						'theme_location' => 'primary', 
+						'menu_class' => 'menu_footer', 
+					) ); 
+				?>						
+			
 				<div class="line_f"></div>
 				<div><span class="icon hom"></span> <span class="name_cty">Công ty tnhh sản xuất thương mại quảng cáo phương toàn</span>
 				<br><span class="diachi">Đc: 110A Lê Niệm, P. Phú Thạnh , Q. Tân Phú </span></div>
