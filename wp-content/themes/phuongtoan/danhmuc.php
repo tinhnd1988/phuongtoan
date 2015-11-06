@@ -28,21 +28,20 @@ get_header();
 		); 
 			$categories = get_categories($args);
 			$i=1;
-			foreach($categories as $category) : ?>
+			$ca_tabs = array();
+			foreach($categories as $category) : $ca_tabs['category_id'] = $category->term_id; ?>
 				<?php /*<li><a href="<?php echo get_term_link( $category->slug, 'danh-muc' );?>"> <?php echo $category->name; ?></a></li>*/?>
 				<li><a href="#tabs-<?php echo $i; ?>"><?php echo $category->name; ?></a></li>    
 			<?php $i++; endforeach; ?>
 		</ul>
-		<?php 
-		$args_cat = array('type' => 'post','hide_empty' => 0, 'taxonomy' => 'danh-muc','orderby'=> 'name', 'order' => 'ASC')
-		$ca_tabs = get_categories($args_cat);
+		<?php 		
 		$j=1;
-		foreach ($ca_tabs as $ca_tab) {
-			$cat_id = $ca_tab->term_id;
-			$args_post = array('post_type' => 'post','category' => $cat_id, 'order' => 'ASC', 'numberposts' => -1 );
+		foreach ($ca_tabs as $value) {
+			$args_post = array('post_type' => 'post','category' => $value, 'order' => 'ASC', 'numberposts' => -1 );
 	    	$datacates = get_posts($args_post);
 	    	print_r($datacates);
-		}
+	    	$j++;		
+		}			
 		   ?> 
 		<div id="tabs-1">
 		    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
