@@ -38,7 +38,7 @@ get_header();
 		$j=1;
 
 		foreach ($ca_tabs as $value) {			
-			$leaderships = new WP_Query(array( 
+			$datacates = new WP_Query(array( 
     'post_type' => 'san-pham',
     'showposts' => -1,
     'tax_query' => array(
@@ -49,9 +49,10 @@ get_header();
     'orderby' => 'title',
     'order' => 'ASC'
 ));
-			$args_post = array('post_type' => 'san-pham','category' => $value, 'order' => 'ASC', 'numberposts' => -1 );
-	    	$datacates = get_posts($args_post);
-	    	print_r($datacates);
+			print_r($datacates['posts']);
+			/*foreach ($datacates as $datacate) {
+				print_r($datacate);
+			}*/
 	    	$j++;		
 		}			
 		   ?> 
