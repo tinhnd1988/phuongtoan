@@ -6,6 +6,13 @@
 */
 get_header();
 ?>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
 <div class="DanhMuc">
 	<h1>Danh Mục Sản Phẩm</h1>
 	<div id="tabs">
