@@ -37,8 +37,8 @@ get_header();
 		<?php 		
 		$j=1;
 
-		foreach ($ca_tabs as $value) {			
-			$datacates = new WP_Query(array( 
+		foreach ($ca_tabs as $value) :			
+			$leaderships = new WP_Query(array( 
     'post_type' => 'san-pham',
     'showposts' => -1,
     'tax_query' => array(
@@ -49,12 +49,27 @@ get_header();
     'orderby' => 'title',
     'order' => 'ASC'
 ));
-			print_r($datacates['posts']);
-			/*foreach ($datacates as $datacate) {
-				print_r($datacate);
-			}*/
+			$args_post = array('post_type' => 'san-pham','category' => $value, 'order' => 'ASC', 'numberposts' => -1 );
+	    	$datacates = get_posts($args_post);
+	    	foreach( $datacates as $datacate ) :
+	    	$meta_value_cate = get_post_meta($datacate->ID); 
+	    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($datacate->ID) );
+	        $img_featured = get_the_post_thumbnail($datacate->ID, 'medium');
+	        $permalink = get_permalink($datacate->ID);
+	    ?>
+				<div class="box">
+					<a href="<?php echo $permalink; ?>"><h2><?php echo $datacate->post_title; ?></h2></a>
+					<?php if ($img_featured): ?>
+						<a href="<?php echo $permalink; ?>"><div class="imgsp"><?php echo $img_featured; ?></div></a>
+						<?php else: ?>
+							<img src="<?php bloginfo('template_url');?>/images/noimages.jpeg" width="220" height="190">
+					<?php endif; ?>					
+				</div>
+
+	    	<?php
+	    	endforeach;
 	    	$j++;		
-		}			
+		endforeach;			
 		   ?> 
 		<div id="tabs-1">
 		    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
