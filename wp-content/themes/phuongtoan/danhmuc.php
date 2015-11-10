@@ -82,6 +82,7 @@ get_header();
     	var id_tab = $(this).find('a').attr('href');
     	$('.display_none').hide();
     	$(id_tab).show();
+    	return false;
     });
   });
   </script>
