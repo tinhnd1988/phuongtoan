@@ -62,14 +62,18 @@ get_header();
 		    		?>
 		    		<li>
 						<div class="box">
-							<a href="<?php echo $permalink; ?>">
-								<h2><?php echo $product->post_title; ?></h2>
+							<a href="<?php echo $permalink; ?>">								
 								<?php if ($img_featured): ?>
 									<div class="imgsp"><?php echo $img_featured; ?></div>
 									<?php else: ?>
 										<img src="<?php bloginfo('template_url');?>/images/noimages.jpeg" width="220" height="190">
-								<?php endif; ?>					
+								<?php endif; ?>
+								<h2><?php echo $product->post_title; ?></h2>
 							</a>
+							<div class="button">
+								<button class="icon_left"> Đặt hàng</button>
+								<button class="icon_right"><a href="<?php echo $permalink; ?>">Chi tiết</a></button>
+							</div>
 						</div>
 					</li>
 		    	<?php $j++; endforeach;?>
