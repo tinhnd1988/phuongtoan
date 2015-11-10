@@ -6,13 +6,6 @@
 */
 get_header();
 ?>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs();
-  });
-  </script>
 <div class="DanhMuc">
 	<h1>Danh Mục Sản Phẩm</h1>
 	<div id="tabs">
@@ -38,7 +31,7 @@ get_header();
 			$ca_tabs = array();
 			foreach($categories as $category) : $ca_tabs[$i]['category_id'] = $category->term_id; ?>
 				<?php /*<li><a href="<?php echo get_term_link( $category->slug, 'danh-muc' );?>"> <?php echo $category->name; ?></a></li>*/?>
-				<li><a href="#tabs-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></a></li>    
+				<li class="ui_tabs"><a href="#tabs-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></a></li>    
 			<?php $i++; endforeach; ?>
 		</ul>
 		<?php 
@@ -59,7 +52,7 @@ get_header();
 			    'orderby' => 'title',
 			    'order' => 'ASC'
 			));?>
-			<div id="tabs-<?php echo $category->term_id;?>">
+			<div class="display_none" id="tabs-<?php echo $category->term_id;?>">
 		    	<?php foreach( $products as $product ) :
 			    	$meta_value_cate = get_post_meta($product->ID); 
 			    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
@@ -81,4 +74,13 @@ get_header();
 		<?php endforeach;?>
 	</div>
 </div>
+<script>
+  $(function() {
+    $(".ui_tabs").click(function(){
+    	var id_tab = $(this).find('a').attr('href');
+    	$('.display_none').hide();
+    	$(id_tab).show();
+    });
+  });
+  </script>
 <?php get_footer(); ?>
