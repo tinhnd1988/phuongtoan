@@ -2782,6 +2782,7 @@ p > video {
 .DanhMuc .list_category li:hover,.DanhMuc .list_category li.active {background-color: #0A67B7 }
 .DanhMuc .list_category li a {padding: 12px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;display: inline-block;}
 .DanhMuc .display_none {display: none;}
+.DanhMuc .display_none ul li {float: left;}
 .DanhMuc .display_none.show_div{display: block;}
 /* DANH MUC end */
 #Footer {
