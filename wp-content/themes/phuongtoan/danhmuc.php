@@ -52,7 +52,7 @@ get_header();
 			    'orderby' => 'title',
 			    'order' => 'ASC'
 			));?>
-			<div class="display_none" id="tabs-<?php echo $category->term_id;?>">
+			<div class="display_none <?php if($i==1) echo 'show_div';?>" id="tabs-<?php echo $category->term_id;?>">
 		    	<?php foreach( $products as $product ) :
 			    	$meta_value_cate = get_post_meta($product->ID); 
 			    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
