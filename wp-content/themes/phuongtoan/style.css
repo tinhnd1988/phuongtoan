@@ -2779,7 +2779,7 @@ p > video {
 .DanhMuc h1 {text-transform: uppercase; font-size: 21px; font-weight: bold;}
 .DanhMuc .list_category {margin: 0 ; display: inline-block; }
 .DanhMuc .list_category li {list-style: none; float: left; margin-right: 10px; background-color: #A6C4DF; margin-bottom: 10px;}
-.DanhMuc .list_category li:hover {background-color: #0A67B7 }
+.DanhMuc .list_category li:hover,.DanhMuc .list_category li.active {background-color: #0A67B7 }
 .DanhMuc .list_category li a {padding: 10px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;}
 .DanhMuc .display_none {display: none;}
 /* DANH MUC end */

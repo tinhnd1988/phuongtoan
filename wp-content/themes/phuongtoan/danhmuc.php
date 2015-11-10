@@ -31,7 +31,7 @@ get_header();
 			$ca_tabs = array();
 			foreach($categories as $category) : $ca_tabs[$i]['category_id'] = $category->term_id; ?>
 				<?php /*<li><a href="<?php echo get_term_link( $category->slug, 'danh-muc' );?>"> <?php echo $category->name; ?></a></li>*/?>
-				<li class="ui_tabs"><a href="#tabs-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></a></li>    
+				<li class="ui_tabs <?php if($i==1) echo 'active';?>"><a href="#tabs-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></a></li>    
 			<?php $i++; endforeach; ?>
 		</ul>
 		<?php 
@@ -77,6 +77,8 @@ get_header();
 <script>
   $(function() {
     $(".ui_tabs").click(function(){
+    	$('.ui_tabs').removeClass('active');
+    	$(this).addClass('active');
     	var id_tab = $(this).find('a').attr('href');
     	$('.display_none').hide();
     	$(id_tab).show();
