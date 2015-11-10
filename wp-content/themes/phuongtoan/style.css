@@ -2784,6 +2784,8 @@ p > video {
 .DanhMuc .display_none {display: none;}
 .DanhMuc .display_none ul {display: inline-block;width: 100%;}
 .DanhMuc .display_none ul li {float: left; list-style: none;}
+.DanhMuc .display_none ul li .box {padding: 10px;}
+.DanhMuc .display_none ul li .box .imgsp img {width: 225px; height: 300px;}
 .DanhMuc .display_none ul li .box h2 {padding: 10px 0; text-transform: uppercase; font-size: 16px;}
 .DanhMuc .display_none ul li .box h2:hover {color: #0A67B7; }
 .DanhMuc .display_none ul li .box .button {display: inline-block; width: 100%}
