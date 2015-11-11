@@ -29,13 +29,12 @@ get_header();
 			        $permalink = get_permalink($product->ID); ?>
 			        <li>
 			        	<div class="content_cttb">
-		        			<div class="imgsp"><a href="<?php echo $permalink; ?>"><?php echo $img_featured; ?><a></div>
+		        			<div class="imgsp"><a href="<?php echo $permalink; ?>"><?php echo $img_featured; ?></a></div>
 		        			<h2><a href="<?php echo $permalink; ?>"><?php echo $product->post_title; ?></a></h2>
 			        	</div>
 			        </li>
 		<?php endforeach;
 		?>
-		<li></li>
 	</ul>
 </div>	
 	
