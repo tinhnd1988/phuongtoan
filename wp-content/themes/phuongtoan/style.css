@@ -2796,6 +2796,7 @@ p > video {
 /* DANH MUC end */
 /* Lien He Begin */
 #lienhe-page-content {max-width: 980px; margin: 0 auto; padding: 15px 0;}
+#lienhe-page-content .lienhe-page {display: inline-block; width: 100%}
 #lienhe-page-content .lien_he_page {display: inline-block; width: 100%;}
 #lienhe-page-content .Left_page {float: left;}
 #lienhe-page-content .right_page {float: right;}
