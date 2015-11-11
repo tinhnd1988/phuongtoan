@@ -25,7 +25,7 @@ get_header();
 		foreach( $products as $product ) :
 			    	$meta_value_cate = get_post_meta($product->ID); 
 			    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
-			        $img_featured = get_the_post_thumbnail($product->ID, 'medium');
+			        $img_featured = get_the_post_thumbnail($product->ID, 'full');
 			        $permalink = get_permalink($product->ID); ?>
 			        <li>
 			        	<div class="content_cttb">
