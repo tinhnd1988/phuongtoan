@@ -30,7 +30,7 @@ get_header();
 			        $permalink = get_permalink($product->ID); ?>
 			        <li>
 			        	<div>
-			        		<?php print_r($product); ?>
+			        		<div class="imgsp"><?php echo $img_featured; ?></div>
 			        		<h2><?php echo $product->post_title; ?></h2>
 			        	</div>
 			        </li>
