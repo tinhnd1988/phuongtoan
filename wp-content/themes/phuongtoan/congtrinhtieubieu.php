@@ -8,7 +8,6 @@ get_header();
 ?>
 
 <div id="CTTB-page-content">
-
 	<ul>
 		<?php $products = query_posts(array( 
 			    'post_type' => 'post',
@@ -30,8 +29,10 @@ get_header();
 			        $permalink = get_permalink($product->ID); ?>
 			        <li>
 			        	<div>
-			        		<div class="imgsp"><?php echo $img_featured; ?></div>
-			        		<h2><?php echo $product->post_title; ?></h2>
+			        		<a href="<?php echo $permalink; ?>">
+			        			<div class="imgsp"><?php echo $img_featured; ?></div>
+			        			<h2><?php echo $product->post_title; ?></h2>
+			        		</a>
 			        	</div>
 			        </li>
 		<?php endforeach;
