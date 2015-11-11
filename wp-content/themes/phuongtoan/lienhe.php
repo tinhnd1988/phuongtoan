@@ -15,7 +15,12 @@ get_header();
 				<span>ĐT: 08 3606 2577 / 0905 333 188</span><br>
 				<span>Email: phuongtoan.vn@gmail.com</span>
 			</div>
-			<?php the_content(); ?>
+			<?php 
+				$id=23; 
+				$post = get_post($id); 
+				$content = apply_filters('the_content', $post->post_content); 
+				echo $content;  
+			?>
 		</div>
 		<div class="right_page">
 			map
