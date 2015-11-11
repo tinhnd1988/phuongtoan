@@ -2805,6 +2805,7 @@ p > video {
 #CTTB-page-content ul {display: inline-block; width: 100%;}
 #CTTB-page-content ul li {float: left; width: 50%; list-style: none;}
 #CTTB-page-content ul li .imgsp {min-height: 390px;}
+#CTTB-page-content ul li .imgsp img {width: 100%; height: 100%}
 #CTTB-page-content ul li h2 {text-align: center;}
 #CTTB-page-content .content_cttb {padding: 10px}
 
