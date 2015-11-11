@@ -23,14 +23,14 @@ get_header();
 			?>
 		</div>
 		<div class="right_page">
-			<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+			<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript">
 var gmap = new google.maps.LatLng(10.780426, 106.625133);
 var marker;
 function initialize()
 {
     var mapProp = {
-         center:new google.maps.LatLng(10.780426, 106.625133),
+         center: gmap,
          zoom:16,
         mapTypeId:google.maps.MapTypeId.ROADMAP
     };
