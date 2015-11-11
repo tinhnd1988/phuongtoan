@@ -2803,7 +2803,7 @@ p > video {
 /* cttb Begin */
 #CTTB-page-content {max-width: 980px; margin: 0 auto; padding: 15px 0;}
 #CTTB-page-content ul {display: inline-block; width: 100%;}
-#CTTB-page-content ul li {float: left; width: 50%;}
+#CTTB-page-content ul li {float: left; width: 50%; list-style: none;}
 #CTTB-page-content .content_cttb {padding: 10px}
 
 /* cttb end */
