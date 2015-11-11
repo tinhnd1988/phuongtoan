@@ -94,7 +94,7 @@ function toggleBounce() {
  
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-			<div id="googleMap" style="width: 600px; height: 230px;">Google Map</div>
+			<div id="googleMap" style="width: 400px; height: 270px;">Google Map</div>
 		</div>
 	</div>
 </div>	
