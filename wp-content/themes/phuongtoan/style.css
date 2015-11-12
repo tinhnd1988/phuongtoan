@@ -2783,16 +2783,17 @@ p > video {
 .DanhMuc .list_category li a {padding: 12px; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold;display: inline-block;}
 .DanhMuc .display_none {display: none;}
 .DanhMuc .display_none ul {display: inline-block;width: 100%;}
-.DanhMuc .display_none ul li {float: left; list-style: none; width: 50%}
+.DanhMuc .display_none ul li {float: left; list-style: none; width: 32%; margin-left: 1%}
 .DanhMuc .display_none ul li .box {padding: 10px;}
 .DanhMuc .display_none ul li .box:hover {box-shadow: 0px 0px 0px 3px #0A67B7 inset;}
-.DanhMuc .display_none ul li .box .imgsp img {width: 100%; height: 350px;}
+.DanhMuc .display_none ul li .box .imgsp img {width: 100%; height: 250px;}
 .DanhMuc .display_none ul li .box h2 {padding: 10px 0; text-transform: uppercase; font-size: 16px;}
 .DanhMuc .display_none ul li .box h2:hover {color: #0A67B7; }
 .DanhMuc .display_none ul li .box .button {display: inline-block; width: 100%}
 .DanhMuc .display_none ul li .box .button .icon_left {float: left; background-color: #FFB600; color: #fff; width: 100px; font-size: 11px;}
 .DanhMuc .display_none ul li .box .button .icon_right {/*float: right*/; background-color: #0A67B7; color: #fff; width: auto; font-size: 11px;}
 .DanhMuc .display_none ul li .box .button .icon_right a {color: #fff;}
+.DanhMuc .display_none ul li .box .button .icon_right:hover{background-color: #FFB600}
 .DanhMuc .display_none.show_div{display: block;}
 /* DANH MUC end */
 /* Lien He Begin */
@@ -2877,6 +2878,55 @@ p > video {
 	z-index: 10;
 }
 
+/*BEGIN SEARCH RESULT*/
+.search-results .page-header{
+	background-color: transparent;
+	border: 0;
+}
+.search-results #main article{
+	margin-top: 0;
+}
+/*END SEARCH RESUULT*/
+
+/*BEGIN SINGLE*/
+.single-san-pham #main{padding: 15px 0px}
+.single-san-pham #main .leftCol{
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding-right: 1%;
+}
+.single-san-pham #main .rightCol{
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding-left: 1%;
+}
+.single-san-pham #main .rightCol h1.entry-title,
+.single-san-pham #main .rightCol .entry-attribute p{margin: 0;}
+.single-san-pham #main .rightCol .entry-attribute label{font-weight: bold}
+.single-san-pham #main .entry-content{padding: 0;}
+.single-san-pham #main .entry-content .description-title{
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 5px 20px;
+	float: left;
+	width: auto;
+	position: relative;
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+.single-san-pham #main .entry-content .description{
+	border: 1px solid #ccc;
+	margin-top: 40px;
+	padding: 15px;
+	background-color: #FFF;
+	position: relative;
+}
+
+
+
+/*END SINGLE*/
 /**
  * 16.0 Media Queries
  */
