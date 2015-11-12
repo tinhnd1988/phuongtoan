@@ -75,8 +75,7 @@ get_header();
 								<h2><?php echo $product->post_title; ?></h2>
 							</a>
 							<div class="button">
-								<button class="icon_left"> Đặt hàng</button>
-								<button class="icon_right"><a href="<?php echo $permalink; ?>">Chi tiết</a></button>
+								<button class="icon_right"><a href="<?php echo $permalink; ?>">Chi tiết sản phẩm</a></button>
 							</div>
 						</div>
 					</li>
