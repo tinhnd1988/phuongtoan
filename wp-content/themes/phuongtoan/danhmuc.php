@@ -54,12 +54,16 @@ get_header();
 			));?>
 			<div class="display_none <?php if($j==1) echo 'show_div';?>" id="tabs-<?php echo $category->term_id;?>">
 				<ul>
-		    	<?php foreach( $products as $product ) :
-			    	$meta_value_cate = get_post_meta($product->ID); 
-			    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
-			        $img_featured = get_the_post_thumbnail($product->ID, 'medium');
-			        $permalink = get_permalink($product->ID);
-		    		?>
+		    	<?php 
+		    		if (empty($products))
+		    			echo '<h2>Danh mục chưa có sản phẩm</h2>';
+
+		    		foreach( $products as $product ) :
+				    	$meta_value_cate = get_post_meta($product->ID); 
+				    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
+				        $img_featured = get_the_post_thumbnail($product->ID, 'medium');
+				        $permalink = get_permalink($product->ID);
+		    	?>
 		    		<li>
 						<div class="box">
 							<a href="<?php echo $permalink; ?>">								
