@@ -2766,13 +2766,39 @@ p > video {
 	font-size: 18px;
 	font-weight: normal;
 }
-.home #home-page-content ul li span{
+.home #home-page-content .ads-content ul li span{
     background: url('images/sprite.png') no-repeat 0px 0px;
     width: 20px;
     height: 20px;
     position: absolute;
     margin: 4px -30px;
 }
+.home #home-page-content .random-cates{
+	padding-top: 60px;
+	border-top: 1px #c6c6c6 solid;
+}
+.home #home-page-content .random-cates ul{
+	display: inline-block;
+	width: 100%;
+}
+.home #home-page-content .random-cates ul li{
+    float: left;
+    list-style: none;
+    width: 24%;
+    margin-left: 0.75%;
+}
+.home #home-page-content .random-cates ul li h2{font-size: 21px;}
+.home #home-page-content .random-cates ul li .box > a:hover {color: #333;}
+.home #home-page-content .random-cates ul li .cate-desc {font-size: 12px;color: #707070;}
+.home #home-page-content .random-cates ul li button.icon_right {
+	font-size: 12px;
+	background-color: #1A75B6;
+	color: #FFF;
+	text-transform: none;
+	font-weight: normal;
+}
+.home #home-page-content .random-cates ul li button.icon_right:hover {background-color: #FEB005}
+.home #home-page-content .random-cates ul li button.icon_right a{color: #FFF;}
 /*HOME PAGE*/
 /* DANH MUC Begin */
 .DanhMuc {max-width: 980px; margin: 0 auto; text-align: center; padding: 15px 0;}
