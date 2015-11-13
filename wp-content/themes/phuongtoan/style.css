@@ -2789,7 +2789,21 @@ p > video {
 }
 .home #home-page-content .random-cates ul li h2{font-size: 21px;}
 .home #home-page-content .random-cates ul li .box > a:hover {color: #333;}
-.home #home-page-content .random-cates ul li .cate-desc {font-size: 12px;color: #707070;}
+.home #home-page-content .random-cates ul li .box .imgsp{
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.home #home-page-content .random-cates ul li .box .imgsp img{
+	position: absolute;
+	max-width: none;
+	min-height: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.home #home-page-content .random-cates ul li .cate-desc {font-size: 12px;color: #707070;min-height: 20px}
 .home #home-page-content .random-cates ul li button.icon_right {
 	font-size: 12px;
 	background-color: #1A75B6;
