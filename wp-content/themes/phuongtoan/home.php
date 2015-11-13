@@ -38,52 +38,61 @@ echo do_shortcode("[huge_it_slider id='1']"); //Display Homepage Slider
 				);
 				$categories = get_categories($args);
 				
-				$randCatesKey = array_rand($categories, 4);
-				foreach ($randCatesKey as $key) :
-			    	//var_dump($categories[$key]);
-			    	$product = query_posts(array( 
-					    'post_type' => 'san-pham',
-					    'showposts' => 1,
-					    'tax_query' => array(
-					    	array(
-						        'taxonomy' => 'danh-muc',
-						        'terms' => $categories[$key]->term_id,
-						        'field' => 'term_id'
+				$nCatesDisplay = 4;
+				$nCate = 0;
+
+				while ($nCate < $nCatesDisplay) :
+					//$randCatesKey = array_rand($categories, $nCatesDisplay);
+					foreach ($categories as $cate) :
+						if ($nCate >= $nCatesDisplay)
+							break;
+				    	$product = query_posts(array( 
+						    'post_type' => 'san-pham',
+						    'showposts' => 1,
+						    'tax_query' => array(
+						    	array(
+							        'taxonomy' => 'danh-muc',
+							        'terms' => $cate->term_id,
+							        'field' => 'term_id'
+							    ),
 						    ),
-					    ),
-					    'orderby' => 'rand',
-					    'order' => 'ASC',
-					    'posts_per_page' => -1
-					));		
+						    'orderby' => 'rand',
+						    'order' => 'ASC',
+						    'posts_per_page' => -1
+						));		
 			?>
 
 			<?php				
-					if (!empty($product)):
-				    	$meta_value_cate = get_post_meta($product[0]->ID); 
-				    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product[0]->ID) );
-				        $img_featured = get_the_post_thumbnail($product[0]->ID, 'medium');
-				        $permalink = get_permalink($product[0]->ID);			
+						if (!empty($product)):
+							$nCate++;
+					    	$meta_value_cate = get_post_meta($product[0]->ID); 
+					    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product[0]->ID) );
+					        $img_featured = get_the_post_thumbnail($product[0]->ID, 'medium');
+					        $permalink = get_permalink($product[0]->ID);			
 			?>
-			    		<li>
-							<div class="box">
-								<a href="<?php echo $permalink; ?>">								
-									<?php if ($img_featured): ?>
-										<div class="imgsp"><?php echo $img_featured; ?></div>
-										<?php else: ?>
-											<img src="<?php bloginfo('template_url');?>/images/noimages.jpeg" width="220" height="190">
-									<?php endif; ?>
-									<h2><?php echo $categories[$key]->name; ?></h2>
-									<p class="cate-desc"><?php echo $categories[$key]->category_description ?></p>
-								</a>
-								<div class="button">
-									<button class="icon_right"><a href="<?php echo $permalink; ?>">Xem thêm</a></button>
+				    		<li>
+								<div class="box">
+									<a href="<?php echo $permalink; ?>">								
+										<?php if ($img_featured): ?>
+											<div class="imgsp"><?php echo $img_featured; ?></div>
+											<?php else: ?>
+												<img src="<?php bloginfo('template_url');?>/images/noimages.jpeg" width="220" height="190">
+										<?php endif; ?>
+										<h2><?php echo $cate->name; ?></h2>
+										<p class="cate-desc"><?php echo $cate->category_description ?></p>
+									</a>
+									<div class="button">
+										<button class="icon_right"><a href="<?php echo $permalink; ?>">Xem thêm</a></button>
+									</div>
 								</div>
-							</div>
-						</li>
+							</li>
 
-	    	<?php 	endif; ?>
+	    	<?php 		endif; 
+					endforeach;
+				endwhile;
+	    	?>
 
-			<?php endforeach; ?>
+			<?php  ?>
 		</ul>
 
 	</div>
