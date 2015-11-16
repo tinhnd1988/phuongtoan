@@ -139,11 +139,11 @@ q {
 	quotes: none;
 }
 
-a:focus {
+/*a:focus {
 	outline: 2px solid #c1c1c1;
 	outline: 2px solid rgba(51, 51, 51, 0.3);
-}
-
+}*/
+a:focus,
 a:hover,
 a:active {
 	outline: 0;

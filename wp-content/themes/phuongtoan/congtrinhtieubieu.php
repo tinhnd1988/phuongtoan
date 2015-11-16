@@ -9,7 +9,8 @@ get_header();
 
 <div id="CTTB-page-content">
 	<ul>
-		<?php $products = query_posts(array( 
+		<?php 
+		$products = query_posts(array( 
 			    'post_type' => 'post',
 			    'showposts' => -1,
 			    'tax_query' => array(
@@ -21,7 +22,11 @@ get_header();
 			    ),
 			    'orderby' => 'title',
 			    'order' => 'ASC'
-			)); 
+			));
+
+		if (empty($products))
+			echo "Chưa có công trình tiêu biểu";
+
 		foreach( $products as $product ) :
 			    	$meta_value_cate = get_post_meta($product->ID); 
 			    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );

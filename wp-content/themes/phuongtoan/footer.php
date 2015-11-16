@@ -15,9 +15,11 @@
 			<div class="footer_left">
 				
 				<?php 
+					wp_reset_query();
 					wp_nav_menu( array( 
 						'theme_location' => 'primary', 
 						'menu_class' => 'menu_footer', 
+						'menu' => 'Internal'
 					) ); 
 				?>						
 			
