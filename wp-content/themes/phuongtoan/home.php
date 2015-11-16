@@ -91,7 +91,8 @@ echo do_shortcode("[huge_it_slider id='1']"); //Display Homepage Slider
 						    	$meta_value_cate = get_post_meta($product[0]->ID); 
 						    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product[0]->ID) );
 						        $img_featured = get_the_post_thumbnail($product[0]->ID, 'medium');
-						        $permalink = get_permalink($product[0]->ID);
+						        //$permalink = get_permalink($product[0]->ID);
+						        $permalink = get_permalink( get_page_by_path( 'danh-muc-san-pham' ) ).'#'.$categories[$key]->slug;
 			?>
 					    		<li>
 									<div class="box">

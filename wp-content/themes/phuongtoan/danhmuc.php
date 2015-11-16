@@ -31,7 +31,7 @@ get_header();
 			$ca_tabs = array();
 			foreach($categories as $category) : $ca_tabs[$i]['category_id'] = $category->term_id; ?>
 				<?php /*<li><a href="<?php echo get_term_link( $category->slug, 'danh-muc' );?>"> <?php echo $category->name; ?></a></li>*/?>
-				<li class="ui_tabs <?php if($i==1) echo 'active';?>"><a href="#tabs-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></a></li>    
+				<li class="ui_tabs <?php if($i==1) echo 'active';?>"><a href="#<?php echo $category->slug; ?>"><?php echo $category->name; ?></a></li>    
 			<?php $i++; endforeach; ?>
 		</ul>
 		<?php 
@@ -52,7 +52,7 @@ get_header();
 			    'orderby' => 'title',
 			    'order' => 'ASC'
 			));?>
-			<div class="display_none <?php if($j==1) echo 'show_div';?>" id="tabs-<?php echo $category->term_id;?>">
+			<div class="display_none <?php if($j==1) echo 'show_div';?>" id="<?php echo $category->slug;?>">
 				<ul>
 		    	<?php 
 		    		if (empty($products))
@@ -87,19 +87,32 @@ get_header();
 	</div>
 </div>
 <script>
-  $(function() {
-    $(".ui_tabs").click(function(){
-    	$('.ui_tabs').removeClass('active');
-    	$(this).addClass('active');
-    	var id_tab = $(this).find('a').attr('href');
-    	$('.display_none').hide();
-    	$(id_tab).show();
-    	return false;
-    });
-  });
-  $('.fancybox').fancybox({
-	'padding' : 0,
-	'border-width': 0,  	
-  });
+	//PREVENT JUMP
+	if (location.hash) {
+  		setTimeout(function() {
+	    	window.scrollTo(0, 0);
+	  	}, 1);
+	}
+	// 
+	jQuery(document).ready(function($) {
+
+		$tab = $(location).attr('hash');
+		if ($tab)			
+			$('a[href="'+$tab+'"]')[0].click();
+	});
+  	$(function() {
+    	$(".ui_tabs").click(function(){
+    		$('.ui_tabs').removeClass('active');
+    		$(this).addClass('active');
+    		var id_tab = $(this).find('a').attr('href');
+    		$('.display_none').hide();
+    		$(id_tab).show();
+    		return false;
+    	});
+  	});
+  	$('.fancybox').fancybox({
+		'padding' : 0,
+		'border-width': 0,  	
+  	});
   </script>
 <?php get_footer(); ?>
