@@ -62,11 +62,12 @@ get_header();
 				    	$meta_value_cate = get_post_meta($product->ID); 
 				    	$url_cate = wp_get_attachment_url( get_post_thumbnail_id($product->ID) );
 				        $img_featured = get_the_post_thumbnail($product->ID, 'medium');
+				        $img_url = simplexml_load_string(get_the_post_thumbnail($product->ID, 'full'))->attributes()->src;
 				        $permalink = get_permalink($product->ID);
 		    	?>
 		    		<li>
 						<div class="box">
-							<a href="<?php echo $permalink; ?>">								
+							<a class="fancybox" href="<?php echo $img_url ?>">								
 								<?php if ($img_featured): ?>
 									<div class="imgsp"><?php echo $img_featured; ?></div>
 									<?php else: ?>
@@ -75,7 +76,7 @@ get_header();
 								<h2><?php echo $product->post_title; ?></h2>
 							</a>
 							<div class="button">
-								<button class="icon_right"><a href="<?php echo $permalink; ?>">Chi tiết sản phẩm</a></button>
+								<button class="icon_right"><a class="fancybox" href="<?php echo $img_url ?>">Chi tiết sản phẩm</a></button>
 							</div>
 						</div>
 					</li>
@@ -95,6 +96,10 @@ get_header();
     	$(id_tab).show();
     	return false;
     });
+  });
+  $('.fancybox').fancybox({
+	'padding' : 0,
+	'border-width': 0,  	
   });
   </script>
 <?php get_footer(); ?>
